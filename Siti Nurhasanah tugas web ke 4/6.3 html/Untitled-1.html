@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: white;
+            box-sizing: border-box;
+            background-color: pink;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            max-width: 100vw;
+            max-height: 100vh;
+        }
+
+        header,
+        footer {
+            width: auto;
+            height: 10vh;
+            background-color: cyan;
+            padding: 0px 20px;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: row;
+            margin-top: 5vh;
+
+        }
+
+        aside {
+            width: 30vw;
+            height: 80vh;
+            background-color: darkcyan;
+        }
+
+        article {
+            width: 65vw;
+            background-color: palevioletred;
+            margin-left: auto;
+
+        }
+
+        .image {
+            display: flex;
+            flex-direction: row;
+            margin-top: 43vh;
+            margin-bottom: 10vh;
+            justify-content: space-around;
+            background-color: palevioletred;
+
+        }
+
+        .img {
+            width: 10vw;
+            height: 20vh;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <div id="main">
+        <aside>Aside</aside>
+        <article>Article
+            <div class="image">
+                <div class="img">Images</div>
+                <div class="img">Images</div>
+                <div class="img">Images</div>
+            </div>
+
+        </article>
+    </div>
+    <br>
+    <footer>Footer</footer>
+</body>
+
+</html>
